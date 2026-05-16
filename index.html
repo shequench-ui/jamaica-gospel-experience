@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamaica Gospel Experience | The National Revival 2028</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap');
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .heading { font-family: 'Playfair Display', serif; }
+        .hero-bg { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.85)), url('https://picsum.photos/id/1015/2000/1200'); }
+    </style>
+</head>
+<body class="bg-black text-white overflow-x-hidden">
+    <!-- HERO -->
+    <section id="hero" class="min-h-screen flex items-center relative hero-bg">
+        <div id="three-container" class="absolute inset-0 z-0"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-6 text-center">
+            <h1 class="text-7xl md:text-8xl heading tracking-tighter mb-4">JAMAICA GOSPEL EXPERIENCE</h1>
+            <p class="text-3xl text-amber-400 mb-8">The National Revival • August 1-8, 2028</p>
+            <p class="max-w-2xl mx-auto text-xl">After 7 years. One movement becomes a revolution.</p>
+            <button onclick="triggerAltar()" class="mt-12 px-10 py-5 bg-gradient-to-r from-amber-400 to-yellow-600 text-black font-bold text-xl rounded-full flex items-center gap-3 mx-auto hover:scale-105 transition-transform">
+                <i class="fa-solid fa-fire-flame-curved"></i> IGNITE THE NATIONAL ALTAR
+            </button>
+        </div>
+    </section>
+
+    <div class="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-amber-400 to-yellow-500 z-50" id="progress-bar"></div>
+
+    <!-- NAV -->
+    <nav class="fixed top-6 right-6 z-50 bg-black/80 backdrop-blur-lg px-6 py-3 rounded-3xl border border-amber-400/30">
+        <ul class="flex gap-8 text-sm">
+            <li onclick="navigateTo('story')" class="cursor-pointer hover:text-amber-400">STORY</li>
+            <li onclick="navigateTo('mandate')" class="cursor-pointer hover:text-amber-400">MANDATE</li>
+            <li onclick="navigateTo('problem')" class="cursor-pointer hover:text-amber-400">PROBLEM</li>
+            <li onclick="navigateTo('solution')" class="cursor-pointer hover:text-amber-400">REVOLUTION</li>
+            <li onclick="navigateTo('calendar')" class="cursor-pointer hover:text-amber-400">CALENDAR</li>
+            <li onclick="navigateTo('ask')" class="cursor-pointer hover:text-amber-400">THE ASK</li>
+        </ul>
+    </nav>
+
+    <!-- More sections to be expanded... -->
+    <script>
+        // Basic GSAP + Three.js setup placeholder
+        console.log('%cJamaica Gospel Experience Immersive Experience Loaded 🔥', 'color:#d4af37; font-size:18px; font-weight:bold');
+        
+        function triggerAltar() {
+            alert('National Altar Ignited! 🔥 (Particle system would explode here in full version)');
+        }
+        
+        function navigateTo(section) {
+            // Placeholder for deep navigation
+            document.getElementById(section) ? document.getElementById(section).scrollIntoView({behavior: 'smooth'}) : console.log('Section coming soon');
+        }
+    </script>
+</body>
+</html>
